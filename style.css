@@ -5,6 +5,48 @@
     box-sizing: border-box;
     outline: none;
 }
+.logo{
+    width: 200px;
+    position: absolute;
+    top: 0%;
+    left: 20;
+}
+#sideNav{
+    width: 250px;
+    height: 55vh;
+    position: fixed;
+    right: -220px;
+    top: 0;
+    background: #000000;
+    z-index: 3;
+    transition: 0.5s;
+}
+nav ul li{
+    list-style: none;
+    margin: 50px 20px;
+}
+nav ul li a{
+    text-decoration: transparent;
+    text-emphasis-color: rgb(236, 8, 8);
+    font-size: 20px;
+    color: white;
+}
+#menuBtn{
+    width: 50px;
+    height: 50px;
+    background: #050505;
+    text-align: center;
+    position: fixed;
+    right: 30px;
+    top: 20px;
+    border-radius: 3px;
+    z-index: 3;
+    cursor: pointer;
+}
+#menuBtn img{
+    width: 20px;
+    margin-top: 15px;
+}
 #slider {
     overflow: hidden;
     height: 100vh;
@@ -49,64 +91,6 @@
     100%{
         left: -400%;
     }
-}
-
-.logo{
-    width: 200px;
-    position: absolute;
-    top: 0%;
-    left: 20;
-}
-.banner-text{
-    text-align: center;
-    color: #fff;
-    padding-top: 300px;
-}
-.banner-text h1{
-    font-size: 70px;
-    font-family: 'Noto Sans', sans-serif;
-    color: rgb(255, 255, 0);
-}
-.banner-text P{
-    font-size: 70px;
-    font-style: italic;
-    color: #000000;
-}
-#sideNav{
-    width: 250px;
-    height: 50vh;
-    position: fixed;
-    right: -220px;
-    top: 0;
-    background: transparent;
-    z-index: 3;
-    transition: 0.5s;
-}
-nav ul li{
-    list-style: none;
-    margin: 50px 20px;
-}
-nav ul li a{
-    text-decoration: none;
-    font-weight: 900;
-    font-size: 20px;
-    color: #006400;
-}
-#menuBtn{
-    width: 50px;
-    height: 50px;
-    background: #050505;
-    text-align: center;
-    position: fixed;
-    right: 30px;
-    top: 20px;
-    border-radius: 3px;
-    z-index: 3;
-    cursor: pointer;
-}
-#menuBtn img{
-    width: 20px;
-    margin-top: 15px;
 }
 .text-box{
     color: #fff;
@@ -172,6 +156,15 @@ nav ul li a{
     width: 25px;
     display: block;
     margin: 25px 5px;
+}
+@media screen and (max-width: 770px){
+    .text-box h1{
+        font-size: 44px;
+    }
+    .banner-btn a{
+        display: block;
+        margin: 20px auto;
+    }
 }
 
 /*--portfolio--*/
